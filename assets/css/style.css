@@ -1,0 +1,412 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* NAVIGATION */
+nav {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    padding: 12px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+.active {
+    background: rgba(0, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 20px;
+    margin-top: 80px;
+    height: 100vh;
+}
+
+.hero .text-content {
+    flex: 1;
+    text-align: left;
+    max-width: 50%;
+    padding-left: 12%;
+}
+
+.hero .text-content h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #00e6e6;
+    margin-bottom: 20px;
+}
+
+.hero .cta-btn {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    background: #00e6e6;
+    color: #0f2027;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero .cta-btn:hover {
+    background: #00ffff;
+    transform: scale(1.1);
+}
+
+.hero .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.hero .image-content img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* EVENTS SECTION */
+#courses {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 90%;
+}
+
+#courses h2 {
+    font-size: 2.5rem;
+    color: #00e6e6;
+}
+
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px;
+    max-width: 380px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.course-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.course-card h3 {
+    color: #00e6e6;
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ABOUT SECTION */
+#about {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 65%;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 11%;
+}
+
+#about h1 {
+    font-size: 3.5rem;
+    color: #00e6e6;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#about p {
+    font-size: 1.5rem;
+    opacity: 0.85;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.purpose-section {
+    margin: 40px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.purpose-section:hover {
+    transform: translateY(-10px);
+}
+
+.purpose-section h2 {
+    font-size: 2.5rem;
+    color: #00e6e6;
+    margin-bottom: 15px;
+}
+
+.purpose-section p {
+    font-size: 1.5rem;
+}
+
+.purpose-section ul {
+    list-style-type: disc;
+    margin-left: 50px;
+    text-align: left;
+}
+
+.purpose-section ul li {
+    font-size: 1.3rem;
+    margin: 12px 0;
+}
+
+/* CHIEF BOARD SECTION */
+.container {
+    padding: 50px;
+}
+
+.title {
+    font-size: 58px;
+    color: #9daceb;
+    font-family: 'Cinzel', serif;
+}
+
+.divider {
+    width: 150px;
+    border: 2px solid #9daceb;
+    margin: 10px auto 40px;
+}
+
+.member-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.role {
+    color: #9daceb;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.name {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    padding: 80px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    color: #00e6e6;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* FOOTER SECTION */
+.footer {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 1.8rem;
+    color: #00e6e6;
+    margin-bottom: 20px;
+}
+
+.footer-contacts {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.footer-contacts a {
+    color: #00e6e6;
+    text-decoration: none;
+}
+
+.footer-contacts a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 100px 20px;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero .text-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero .text-content h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero .cta-btn {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+
+    .hero .image-content {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+
+    #courses {
+        width: 95%;
+        padding: 50px 10px;
+    }
+
+    .course-card {
+        max-width: 90%;
+    }
+
+    .course-card img {
+        height: 160px;
+    }
+
+    #about {
+        width: 90%;
+        padding: 50px 10px;
+    }
+
+    .purpose-section {
+        width: 90%;
+    }
+
+    #about h1 {
+        font-size: 2.4rem;
+    }
+
+    .purpose-section h2 {
+        font-size: 2rem;
+    }
+
+    .purpose-section p,
+    .purpose-section ul li {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 30px 10px;
+    }
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .role {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 16px;
+    }
+
+    .contact-section {
+        width: 95%;
+        padding: 40px 10px;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .contact-section p {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .footer h3 {
+        font-size: 1.5rem;
+    }
+
+    .footer-contacts {
+        font-size: 0.9rem;
+    }
+}
